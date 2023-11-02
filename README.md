@@ -6,7 +6,8 @@ It is also made to be easily printable.
 
 # Install Dependencies
 ```sh
-# npm i -g concurrently tailwindcss live-server
+#!bin/bash
+npm i -g concurrently tailwindcss live-server
 ```
 
 # Run Development Server
@@ -24,4 +25,4 @@ cp index.html output.css /path/to/website/resume
 cp index.html output.css docs/
 ```
 
-Icons are sourced from devicon.dev
+*Icons are sourced from devicon.dev*
