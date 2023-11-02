@@ -1,4 +1,4 @@
-# TailwindCSS Resume.
+# TailwindCSS Resume
 This is my resume written in TailwindCSS, from scratch.
 
 It supports multi-page, and automatically resizes for mobile.
