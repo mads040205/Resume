@@ -1,1 +1,1 @@
-concurrently "tailwindcss -i src/input.css -o dist/output.css --watch"  "live-server --port=3000"
+concurrently "tailwindcss -i src/input.css -o output.css --watch"  "live-server --port=3000"
