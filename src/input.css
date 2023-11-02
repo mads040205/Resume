@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @media print {
-  a[href]:not(h1 a[href]):after {
+  a[href]:not(.nolink):after {
     content: " (" attr(href) ")";
   }
 }
