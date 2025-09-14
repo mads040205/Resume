@@ -4,8 +4,8 @@
   "description": "Madalyn Bauman's resume website built with TailwindCSS",
   "main": "index.html",
   "scripts": {
-    "build": "mkdir -p dist && tailwindcss -i input.css -o dist/styles.css --minify && cp index.html scripts.js _redirects dist/",
-    "dev": "tailwindcss -i input.css -o styles.css --watch",
+    "build": "mkdir -p dist && npx tailwindcss -i input.css -o dist/styles.css --minify && cp index.html scripts.js _redirects dist/",
+    "dev": "npx tailwindcss -i input.css -o styles.css --watch",
     "dev-server": "concurrently \"npm run dev\" \"live-server --port=3000\"",
     "clean": "rm -rf dist && rm -f styles.css"
   },
@@ -20,7 +20,7 @@
   "devDependencies": {
     "concurrently": "^9.2.1",
     "live-server": "^1.2.2",
-    "tailwindcss": "^4.1.13"
+    "tailwindcss": "^3.4.17"
   },
   "engines": {
     "node": ">=16.0.0"
