@@ -1,6 +1,6 @@
 function revealEmail() {
   // Email is encoded to prevent bot scraping
-  const parts = ['career', 'nathanriley', 'com'];
+  const parts = ['career', 'madalynriley', 'com'];
   const email = parts[0] + '@' + parts[1] + '.' + parts[2];
   
   const emailLink = document.getElementById('email-link');
