@@ -1,0 +1,28 @@
+{
+  "name": "madalyn-bauman-resume",
+  "version": "1.0.0",
+  "description": "Madalyn Bauman's resume website built with TailwindCSS",
+  "main": "index.html",
+  "scripts": {
+    "build": "mkdir -p dist && tailwindcss -i input.css -o dist/styles.css --minify && cp index.html scripts.js _redirects dist/",
+    "dev": "tailwindcss -i input.css -o styles.css --watch",
+    "dev-server": "concurrently \"npm run dev\" \"live-server --port=3000\"",
+    "clean": "rm -rf dist && rm -f styles.css"
+  },
+  "keywords": [
+    "resume",
+    "tailwindcss",
+    "portfolio",
+    "cloudflare-pages"
+  ],
+  "author": "Madalyn Bauman",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.3.5",
+    "concurrently": "^8.2.2",
+    "live-server": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

@@ -1,0 +1,18 @@
+# Cloudflare Pages redirects and rules
+
+# Handle root requests
+/ /index.html 200
+
+# Handle any 404s by serving the main page (for SPA behavior if needed)
+/* /index.html 200
+
+# Cache static assets
+/styles.css /styles.css 200
+/scripts.js /scripts.js 200
+
+# Security headers
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
