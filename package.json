@@ -18,9 +18,9 @@
   "author": "Madalyn Bauman",
   "license": "MIT",
   "devDependencies": {
-    "tailwindcss": "^3.3.5",
-    "concurrently": "^8.2.2",
-    "live-server": "^1.2.2"
+    "concurrently": "^9.2.1",
+    "live-server": "^1.2.2",
+    "tailwindcss": "^4.1.13"
   },
   "engines": {
     "node": ">=16.0.0"
