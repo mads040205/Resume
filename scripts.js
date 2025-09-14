@@ -1,10 +1,15 @@
 function revealEmail() {
   // Email is encoded to prevent bot scraping
-  const parts = ['career', 'madalynriley', 'com'];
+  const parts = ['career', 'nathanriley', 'com'];
   const email = parts[0] + '@' + parts[1] + '.' + parts[2];
   
   const emailLink = document.getElementById('email-link');
   const printEmail = document.getElementById('print-email');
+  
+  // Always populate the print email span (even if not visible)
+  if (!printEmail.textContent) {
+    printEmail.textContent = email;
+  }
   
   // First click: Show the email address
   if (emailLink.textContent === 'Email Me') {
@@ -13,11 +18,6 @@ function revealEmail() {
     setTimeout(() => {
       emailLink.style.transform = 'scale(1)';
     }, 200);
-    
-    // Also populate print email when revealing
-    if (printEmail) {
-      printEmail.textContent = email;
-    }
   } else {
     // Second click: Open email client
     emailLink.href = 'mailto:' + email;
@@ -27,9 +27,9 @@ function revealEmail() {
   }
 }
 
-// Only populate email for print when printing
-window.addEventListener('beforeprint', function() {
-  const parts = ['career', 'madalynriley', 'com'];
+// Populate email for print on page load
+document.addEventListener('DOMContentLoaded', function() {
+  const parts = ['career', 'nathanriley', 'com'];
   const email = parts[0] + '@' + parts[1] + '.' + parts[2];
   const printEmail = document.getElementById('print-email');
   if (printEmail) {
