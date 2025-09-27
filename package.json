@@ -6,7 +6,7 @@
   "scripts": {
     "build": "mkdir -p dist && npx tailwindcss -i input.css -o dist/styles.css --minify && cp index.html scripts.js _redirects dist/",
     "dev": "npx tailwindcss -i input.css -o styles.css --watch",
-    "dev-server": "concurrently \"npm run dev\" \"live-server --port=3000\"",
+    "dev:server": "concurrently \"npm run dev\" \"live-server --port=3000\"",
     "clean": "rm -rf dist && rm -f styles.css"
   },
   "keywords": [
